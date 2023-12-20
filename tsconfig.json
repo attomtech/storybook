@@ -1,0 +1,4 @@
+{
+  "extends": "@attomtech/ts-config/react.json",
+  "include": ["src"]
+}
