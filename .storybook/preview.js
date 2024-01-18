@@ -1,7 +1,7 @@
 /** @type { import('@storybook/react').Preview } */
 import { themes } from '@storybook/theming'
 
-import '../src/styles/tailwind.css'
+import '@attomtech/react/dist/index.css'
 
 const preview = {
     parameters: {
