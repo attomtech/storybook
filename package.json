@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@attomtech/eslint-config": "^1.0.0",
-    "@attomtech/react": "2.1.0",
+    "@attomtech/react": "3.0.0-beta.0",
     "@attomtech/tokens": "1.1.1",
     "@attomtech/ts-config": "^1.0.0",
     "@storybook/addon-a11y": "^7.6.4",

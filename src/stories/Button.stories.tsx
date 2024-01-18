@@ -20,7 +20,7 @@ export default {
       }
     },
     size: {
-      options: ['sm', 'md'],
+      options: ['sm', 'md', 'lg'],
       control: {
         type: 'inline-radio'
       }
@@ -37,6 +37,13 @@ export default {
 } as Meta<ButtonProps>
 
 export const Primary: StoryObj<ButtonProps> = {}
+
+export const Success: StoryObj<ButtonProps> = {
+  args: {
+    variant: 'success',
+    children: 'Success'
+  }
+}
 
 export const Warning: StoryObj<ButtonProps> = {
   args: {
