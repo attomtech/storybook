@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Box, Text, Checkbox, CheckboxProps } from '@attomtech/react'
+import { Box, Checkbox, CheckboxProps, Text } from '@attomtech/react'
 
 export default {
   title: 'Form/Checkbox',
@@ -20,11 +20,15 @@ export default {
     (Story: any) => {
       return (
         <Box
-          as="label"
-          css={{ display: 'flex', flexDirection: 'row', gap: '$2' }}
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+            gap: '8px',
+            alignItems: 'center'
+          }}
         >
           {Story()}
-          <Text size="sm">Accept terms of use</Text>
+          <Text>Accept terms of use</Text>
         </Box>
       )
     }

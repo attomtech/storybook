@@ -6,7 +6,8 @@ export default {
   component: Select,
   tags: ['autodocs'],
   args: {
-    variant: 'primary'
+    variant: 'primary',
+    disabled: true
   },
   argTypes: {
     variant: {
@@ -19,10 +20,7 @@ export default {
   decorators: [
     (Story: any) => {
       return (
-        <Box
-          as="label"
-          css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}
-        >
+        <Box style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
           {Story()}
         </Box>
       )

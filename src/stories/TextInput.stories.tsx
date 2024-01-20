@@ -31,11 +31,8 @@ export default {
   decorators: [
     (Story: any) => {
       return (
-        <Box
-          as="label"
-          css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}
-        >
-          <Text size="sm">Email address</Text>
+        <Box style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+          <Text>Email address</Text>
           {Story()}
         </Box>
       )
@@ -52,7 +49,8 @@ export const Primary: StoryObj<TextInputProps> = {
 
 export const Disabled: StoryObj<TextInputProps> = {
   args: {
-    disabled: true
+    disabled: true,
+    placeholder: 'Not Allowed'
   }
 }
 
